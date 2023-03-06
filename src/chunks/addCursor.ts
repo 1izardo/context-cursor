@@ -9,6 +9,7 @@ const addCursor = (props: CProps) => {
     document.body.prepend(contextCursor);
     return contextCursor;
   }
+  return;
 };
 
 export default addCursor;

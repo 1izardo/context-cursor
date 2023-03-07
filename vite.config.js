@@ -1,9 +1,11 @@
-import legacy from "@vitejs/plugin-legacy";
+import { resolve } from "path";
 
 export default {
-  plugins: [
-    legacy({
-      targets: ["defaults", "not IE 11"],
-    }),
-  ],
+  build: {
+    lib: {
+      entry: resolve(__dirname, "src/main.ts"),
+      name: "context-cursor",
+      fileName: "context-cursor",
+    },
+  },
 };

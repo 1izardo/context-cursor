@@ -1,10 +1,10 @@
 const getMoveIndex = (
-  mouseEventDirection: number,
+  mousePosition: number,
   elPosition: number,
   elDimension: number,
   movementSpeed: number
 ) => {
-  let relativePos = mouseEventDirection - elPosition;
+  let relativePos = mousePosition - elPosition;
   return (relativePos - elDimension / 2) / movementSpeed;
 };
 

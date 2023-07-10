@@ -1,0 +1,33 @@
+:root {
+  /* Required for context cursor */
+  --cc-cursor-active-bg: rgba(0, 0, 0, 0.05);
+  --cc-cursor-inactive-bg: rgba(0, 0, 0, 0.15);
+  --cc-cursor-box-shadow: 0 25px 50px 0px rgba(0, 0, 0, 0.2);
+  --cc-cursor-lift-outline: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Optionally specify variables for dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cc-cursor-active-bg: rgba(255, 255, 255, 0.2);
+    --cc-cursor-inactive-bg: rgba(255, 255, 255, 0.15);
+    --cc-cursor-lift-outline: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+.cc-cursor {
+  background-color: var(--cc-cursor-inactive-bg);
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: background-color 0.5s;
+  z-index: 999;
+
+  &.active {
+    background-color: var(--cc-cursor-active-bg);
+  }
+
+  &.lift-active {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}

@@ -20,17 +20,17 @@
       "url": "http://pavellaptev.github.io/"
     }
   ],
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/context-cursor.umd.js",
-  "module": "./dist/context-cursor.js",
+  "module": "./dist/main.js",
+  "main": "./dist/main.umd.cjs",
   "exports": {
     ".": {
-      "import": "./dist/context-cursor.js",
-      "require": "./dist/context-cursor.umd.cjs"
+      "import": "./dist/main.js",
+      "require": "./dist/main.umd.cjs"
     }
   },
   "types": "./dist/main.d.ts",

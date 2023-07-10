@@ -6,9 +6,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/main.ts"),
+      fileName: "main",
       name: "ContextCursor",
-      fileName: (format) =>
-        format === "es" ? "context-cursor.js" : `context-cursor.${format}.js`,
     },
   },
   plugins: [dts()],

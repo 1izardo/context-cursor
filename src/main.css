@@ -22,12 +22,12 @@
   pointer-events: none;
   transition: background-color 0.5s;
   z-index: 999;
+}
 
-  &.active {
-    background-color: var(--cc-cursor-active-bg);
-  }
+.cc-cursor.active {
+  background-color: var(--cc-cursor-active-bg);
+}
 
-  &.lift-active {
-    background-color: rgba(255, 255, 255, 0);
-  }
+.cc-cursor.lift-active {
+  background-color: rgba(255, 255, 255, 0);
 }

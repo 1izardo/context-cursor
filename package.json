@@ -20,7 +20,7 @@
       "url": "http://pavellaptev.github.io/"
     }
   ],
-  "version": "2.0.1",
+  "version": "2.0.2",
   "type": "module",
   "files": [
     "dist"
@@ -31,6 +31,10 @@
     ".": {
       "import": "./dist/main.js",
       "require": "./dist/main.umd.cjs"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "types": "./dist/main.d.ts",
